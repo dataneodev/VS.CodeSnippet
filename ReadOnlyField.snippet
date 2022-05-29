@@ -2,23 +2,25 @@
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
-            <Title>Readonly struct</Title>
+            <Title>Readonly field</Title>
 			<Author>dataneo</Author>
-            <Description>Create readonly struct</Description>
-            <Shortcut>rstruct</Shortcut>
+            <Description>Create readonly field</Description>
+            <Shortcut>rfield</Shortcut>
         </Header>
         <Snippet>
 		  <Code Language="CSharp">
-			<![CDATA[private readonly struct $Name$
-    {
-
-    }]]>
+			<![CDATA[private readonly $Type$ _$Name$;]]>
 		  </Code>
 		  <Declarations>
 			<Literal>
 			  <ID>Name</ID>
-			  <ToolTip>Enter struct name.</ToolTip>
-			  <Default>Rstruc</Default>
+			  <ToolTip>Enter field name.</ToolTip>
+			  <Default>name</Default>
+			</Literal>
+			<Literal>
+				<ID>Type</ID>
+			  <ToolTip>Type name.</ToolTip>
+			  <Default>T</Default>
 			</Literal>
 		  </Declarations>
 		</Snippet>
